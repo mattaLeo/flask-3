@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Lista studenti</h1>
+        {% for studente in studenti %}
+            <li>{{ studente['nome'] }}</li>
+        {% endfor %}
+    <a href="/">Torna al form</a>
+</body>
+</html>
