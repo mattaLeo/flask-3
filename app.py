@@ -3,6 +3,14 @@ from models import DatabaseWrapper
 
 app = Flask(__name__)
 
+db = DatabaseWrapper(
+    host = "mysql-1e5e0afb-pallascats.i.aivencloud.com",
+    user = "avnadmin",
+    port = 12223,
+    password = "AVNS_yQYeMS3IIA_ODp_IoLN",
+    database = "defaultdb"
+)
+
 studenti = [
     {"id": 1, "nome": "Anna"},
     {"id": 2, "nome": "Marco"}
